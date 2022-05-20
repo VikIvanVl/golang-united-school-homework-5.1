@@ -1,4 +1,4 @@
-package square
+package golang_united_school_homework_5_1
 
 type Point struct {
 	x, y int
@@ -9,14 +9,17 @@ type Square struct {
 	a     uint
 }
 
-func (receiver) End() Point {
-	// implement me
+func (squareValue Square) End() Point {
+	var pointValue Point
+	pointValue.x = squareValue.start.x + int(squareValue.a)
+	pointValue.y = squareValue.start.y - int(squareValue.a)
+	return pointValue
 }
 
-func (receiver) Area() uint {
-	// implement me
+func (squareValue Square) Area() uint {
+	return squareValue.a * squareValue.a
 }
 
-func (receiver) Perimeter() uint {
-	// implement me
+func (squareValue Square) Perimeter() uint {
+	return squareValue.a + squareValue.a + squareValue.a + squareValue.a
 }
