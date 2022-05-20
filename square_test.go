@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func Test_End(t *testing.T) {
+func TestEnd(t *testing.T) {
 	in := &Square{
 		start: Point{0, 0},
 		a:     2,
@@ -18,7 +18,7 @@ func Test_End(t *testing.T) {
 	}
 }
 
-func Test_Area(t *testing.T) {
+func TestArea(t *testing.T) {
 	in := &Square{
 		start: Point{0, 0},
 		a:     2,
@@ -32,7 +32,7 @@ func Test_Area(t *testing.T) {
 	}
 }
 
-func Test_Perimeter(t *testing.T) {
+func TestPerimeter(t *testing.T) {
 	in := &Square{
 		start: Point{0, 0},
 		a:     2,
