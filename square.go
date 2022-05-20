@@ -12,7 +12,7 @@ type Square struct {
 func (squareValue Square) End() Point {
 	var pointValue Point
 	pointValue.x = squareValue.start.x + int(squareValue.a)
-	pointValue.y = squareValue.start.y - int(squareValue.a)
+	pointValue.y = squareValue.start.y + int(squareValue.a)
 	return pointValue
 }
 

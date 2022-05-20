@@ -9,7 +9,7 @@ func TestEnd(t *testing.T) {
 		start: Point{0, 0},
 		a:     2,
 	}
-	excepted := Point{2, -2}
+	excepted := Point{2, 2}
 
 	got := in.End()
 	if excepted != got {
